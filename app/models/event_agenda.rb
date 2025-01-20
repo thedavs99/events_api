@@ -1,0 +1,2 @@
+class EventAgenda < ApplicationRecord
+end
