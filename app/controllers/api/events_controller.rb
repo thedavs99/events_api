@@ -13,7 +13,9 @@ class Api::EventsController < Api::ApiController
         local_event: event.local_event,
         limit_participants: event.limit_participants,
         description: event.description,
-        event_agendas: event.event_agendas
+        event_agendas: event.event_agendas,
+        start_date: event.start_date,
+        end_date: event.end_date
       }
     end
     render status: 200, json: events_json.as_json
@@ -32,7 +34,10 @@ class Api::EventsController < Api::ApiController
         local_event: event.local_event,
         limit_participants: event.limit_participants,
         description: event.description,
-        event_agendas: event.event_agendas
+        event_agendas: event.event_agendas,
+        start_date: event.start_date,
+        end_date: event.end_date,
+        agenta_type: event.agenda_type
       }
       render status: 200, json: event_json
     rescue
