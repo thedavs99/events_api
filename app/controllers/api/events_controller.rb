@@ -15,7 +15,8 @@ class Api::EventsController < Api::ApiController
         description: event.description,
         event_agendas: event.event_agendas,
         start_date: event.start_date,
-        end_date: event.end_date
+        end_date: event.end_date,
+        batches: event.batches
       }
     end
     render status: 200, json: events_json.as_json
@@ -37,7 +38,8 @@ class Api::EventsController < Api::ApiController
         event_agendas: event.event_agendas,
         start_date: event.start_date,
         end_date: event.end_date,
-        agenta_type: event.agenda_type
+        agenta_type: event.agenda_type,
+        batches: event.batches
       }
       render status: 200, json: event_json
     rescue

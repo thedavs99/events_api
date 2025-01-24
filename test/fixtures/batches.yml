@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  limit_tickets: 1
+  start_date: MyString
+  value: 1.5
+  end_date: MyString
+  event: one
+
+two:
+  name: MyString
+  limit_tickets: 1
+  start_date: MyString
+  value: 1.5
+  end_date: MyString
+  event: two

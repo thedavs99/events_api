@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   # root "posts#index"
   # 
   namespace :api do
-    resources :events, only: [ :index, :show ]
+    resources :events, only: [ :index, :show ] do
+      resources :batches, only: [ :index ]
+    end
   end
 end
